@@ -1,1 +1,24 @@
-
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WebAR Viewer</title>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <style>
+      body { margin: 0; }
+      model-viewer {
+        width: 100vw;
+        height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <model-viewer
+      src="model.usdz"
+      ar
+      ar-modes="scene-viewer quick-look webxr"
+      auto-rotate
+      camera-controls
+      alt="3D model">
+    </model-viewer>
+  </body>
+</html>
